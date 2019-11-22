@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+            string="Invoice Insurance" 
+            id="action_report_invoice_insurance" 
+            model="invoice.insurance" 
+            report_type="qweb-pdf"
+            name="bec_invoice_insurance.report_invoice_insurance" 
+            file="bec_invoice_insurance.report_invoice_insurance"
+            print_report_name="
+                (object.state in ('draft') and 'Draft - %s' % (object.name) or
+                'Invoice Insurance - %s' % (object.name))"
+        />
+
+        <template id="report_invoice_insurance">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="bec_invoice_insurance.report_invoice_insurance_document" t-lang="o.partner_id.lang"/>
+                </t>
+            </t>
+        </template>
+
+        <template id="report_invoice_insurance_document">
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})"/>
+                <t t-set="address">
+                    <strong>To:</strong>
+                    <div t-field="o.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
+                    <p t-if="o.partner_id.vat"><t t-esc="o.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="o.partner_id.vat"/></p>
+                </t>
+                <br/>
+
+                <div class="page">
+                    <div class="oe_structure"/>
+
+                    <h3 t-if="o.state == 'draft'">Draft #<span t-field="o.name"/></h3>
+                    <h3 t-if="o.state == 'done'">#<span t-field="o.name"/></h3>
+                    <h3 t-if="o.state == 'cancel'">#<span t-field="o.name"/> (cancel)</h3>
+
+                    <br/>
+
+                    <table class="table table-sm o_main_table">
+                        <thead>
+                            <tr>
+                                <th><strong>Invoice</strong></th>
+                                <th class="text-right"><strong>Total</strong></th>
+                                <th class="text-right"><strong>Amount Due</strong></th>
+                                <th><strong>Invoice</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="sum_amount_total" t-value="0"/>
+                            <t t-set="sum_residual" t-value="0"/>
+                            <tr t-foreach="o.line_ids" t-as="line">
+                                <t t-set="sum_amount_total" t-value="sum_amount_total+line.amount_total" />
+                                <t t-set="sum_residual" t-value="sum_residual+line.residual" />
+                                <td>
+                                    <span t-field="line.name"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.amount_total"
+                                        t-options='{"widget": "monetary", "display_currency": line.currency_id}'/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.residual"
+                                        t-options='{"widget": "monetary", "display_currency": line.currency_id}'/>
+                                </td>
+                                <td>
+                                    <span t-field="line.state"/>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th><strong>Total</strong></th>
+                                <th class="text-right"><strong>
+                                    <span t-esc="sum_amount_total" 
+                                        t-options='{"widget": "monetary", "display_currency": o.partner_id.company_id.currency_id}'/>
+                                    </strong>
+                                </th>
+                                <th class="text-right"><strong>
+                                    <span t-esc="sum_residual" 
+                                        t-options='{"widget": "monetary", "display_currency": o.partner_id.company_id.currency_id}'/>
+                                    </strong>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </t>
+        </template>
+        
+    </data>
+</odoo>
