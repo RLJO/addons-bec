@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="invoice_form" model="ir.ui.view">
+        <field name="name">account.invoice.form.bec_invoice</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="patient_id" />
+            </field>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="view_hotel_reservation_tree">
+        <field name="name">account.invoice.tree.bec_invoice</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_tree"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="patient_id"/>
+            </field>
+      </field>
+    </record>
+
+</odoo>

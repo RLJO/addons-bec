@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="bec_id_simrs.list">
+      <field name="name">bec_id_simrs list</field>
+      <field name="model">bec_id_simrs.bec_id_simrs</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="bec_id_simrs.action_window">
+      <field name="name">bec_id_simrs window</field>
+      <field name="res_model">bec_id_simrs.bec_id_simrs</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="bec_id_simrs.action_server">
+      <field name="name">bec_id_simrs server</field>
+      <field name="model_id" ref="model_bec_id_simrs_bec_id_simrs"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="bec_id_simrs" id="bec_id_simrs.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="bec_id_simrs.menu_1" parent="bec_id_simrs.menu_root"/>
+    <menuitem name="Menu 2" id="bec_id_simrs.menu_2" parent="bec_id_simrs.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="bec_id_simrs.menu_1_list" parent="bec_id_simrs.menu_1"
+              action="bec_id_simrs.action_window"/>
+    <menuitem name="Server to list" id="bec_id_simrs" parent="bec_id_simrs.menu_2"
+              action="bec_id_simrs.action_server"/>
+    -->
+  </data>
+</odoo>
