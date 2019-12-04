@@ -1,0 +1,2 @@
+id,name,property_account_receivable_id:id,property_account_payable_id:id,property_account_expense_categ_id:id,property_account_income_categ_id:id,income_currency_exchange_account_id:id,expense_currency_exchange_account_id:id,use_anglo_saxon,currency_id:id
+l10n_id,Indonesia Account Chart Template (by Arkana),l10n_id1010201,l10n_id2010201,l10n_id5010101,l10n_id4010101,l10n_id7020103,l10n_id7010103,True,base.IDR

@@ -1,0 +1,3 @@
+id,description,chart_template_id:id,type_tax_use,name,amount_type,amount,account_id:id,refund_account_id:id,children_tax_ids:id,tag_ids:id
+ST1,ST1,l10n_id,sale,PPN (10%),percent,10.0,l10n_id2010403,l10n_id2010403,,tag_st1
+PT1,PT1,l10n_id,purchase,PPN Masukan (10%),percent,10.0,l10n_id1010503,l10n_id1010503,,tag_pt1
