@@ -1,0 +1,57 @@
+id,code,name,user_type_id:id,chart_template_id:id,reconcile
+l10n_id1010105,1010121,Deposito Berjangka,account.data_account_type_liquidity,l10n_id,FALSE
+l10n_id1010201,1010201,Piutang Usaha,account.data_account_type_receivable,l10n_id,TRUE
+l10n_id1010202,1010202,Piutang - Pihak Istimewa,account.data_account_type_receivable,l10n_id,TRUE
+l10n_id1010203,1010203,Piutang Lainnya,account.data_account_type_receivable,l10n_id,TRUE
+l10n_id1010204,1010204,Piutang Karyawan,account.data_account_type_receivable,l10n_id,TRUE
+l10n_id1010301,1010301,Persediaan,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010302,1010302,Barang Transit,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010401,1010401,Uang Muka Karyawan,account.data_account_type_prepayments,l10n_id,FALSE
+l10n_id1010402,1010402,Uang Muka Pembelian,account.data_account_type_prepayments,l10n_id,FALSE
+l10n_id1010501,1010501,PPh 21 Dibayar di Muka,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010502,1010502,PPh 25 Dibayar di Muka,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010503,1010503,PPN Dibayar di Muka,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010504,1010504,Aset Pajak Tangguhan,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010601,1010601,Asuransi dibayar di muka,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010602,1010602,Sewa dibayar di muka,account.data_account_type_current_assets,l10n_id,FALSE
+l10n_id1010702,1010702,Akumulasi Depresiasi Asset Tetap,account.data_account_type_fixed_assets,l10n_id,FALSE
+l10n_id1010701,1010703,Beban Akuisisi Asset Tetap,account.data_account_type_fixed_assets,l10n_id,FALSE
+l10n_id1020101,1020101,Proyek dalam pengerjaan,account.data_account_type_non_current_assets,l10n_id,FALSE
+l10n_id2010101,2010101,Pinjaman Bank,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010201,2010201,Hutang Dagang,account.data_account_type_payable,l10n_id,TRUE
+l10n_id2010202,2010202,Hutang Dagang - Pihak Istimewa,account.data_account_type_payable,l10n_id,TRUE
+l10n_id2010203,2010203,Hutang belum ditagihkan,account.data_account_type_payable,l10n_id,TRUE
+l10n_id2010301,2010301,Hutang Lainnya,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010401,2010401,PPh 21,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010402,2010402,PPh 25,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010403,2010403,PPN,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010404,2010404,PPh 23,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010405,2010405,Hutang Pajak Tangguhan,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010501,2010501,Hutang Gaji,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2010502,2010502,Hutang Beban Telekomunikasi,account.data_account_type_current_liabilities,l10n_id,FALSE
+l10n_id2020101,2020101,Pinjaman Jangka Panjang Bank - Bank ....,account.data_account_type_non_current_liabilities,l10n_id,FALSE
+l10n_id3010101,3010101,Saham,account.data_account_type_equity,l10n_id,FALSE
+l10n_id3020101,3020101,Laba Ditahan,account.data_account_type_equity,l10n_id,FALSE
+l10n_id3020102,3020102,Untung/Rugi Belum Terdistribusi,account.data_unaffected_earnings,l10n_id,FALSE
+l10n_id4010101,4010101,Pendapatan Penjualan,account.data_account_type_revenue,l10n_id,FALSE
+l10n_id5010101,5010101,Biaya Penjualan,account.data_account_type_direct_costs,l10n_id,FALSE
+l10n_id6010101,6010101,Gaji & Kesejahteraan Karyawan,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010102,6010102,Perjalanan Dinas,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010103,6010103,Jamsostek,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010104,6010104,Depresiasi,account.data_account_type_depreciation,l10n_id,FALSE
+l10n_id6010105,6010105,Asuransi,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010106,6010106,Honor Profesional,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010107,6010107,Rental,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010108,6010108,Telekomunikasi,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010109,6010109,Pemeliharaan,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010110,6010110,Biaya Kirim,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010111,6010111,Alat Tulis Kantor,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id6010112,6010112,Biaya lain-lain,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id7010101,7010101,Biaya Perbankan,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id7010102,7010102,Kerugian Pelepasan Aset,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id7010103,7010103,Kerugian Transaksi Valuta Asing,account.data_account_type_expenses,l10n_id,FALSE
+l10n_id7020101,7020101,Bunga Akun Tabungan,account.data_account_type_other_income,l10n_id,FALSE
+l10n_id7020102,7020102,Keuntungan Pelepasan Aset,account.data_account_type_other_income,l10n_id,FALSE
+l10n_id7020103,7020103,Keuntungan Transaksi Valuta Asing,account.data_account_type_other_income,l10n_id,FALSE
+l10n_id3030101,3030101,Akun Pendapatan Awal,account.data_account_type_equity,l10n_id,FALSE
+l10n_id3030102,3030102,Akun Beban Awal,account.data_account_type_equity,l10n_id,FALSE

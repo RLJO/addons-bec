@@ -20,6 +20,7 @@
         <field name="arch" type="xml">
             <field name="partner_id" position="after">
                 <field name="patient_id"/>
+                <field name="no_inv_simrs"/>
             </field>
       </field>
     </record>
