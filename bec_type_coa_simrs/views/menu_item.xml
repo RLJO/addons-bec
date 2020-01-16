@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="action_type_coa_simrs" model="ir.actions.act_window">
+            <field name="name">Harvest Real Report</field>
+	        <field name="res_model">account.account_type_coa_simrs</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,form</field>
+	        <field name="view_id"></field> 
+	        <field name="help">Type Coa Simrs</field>
+        </record>
+
+
+	  	<menuitem 
+	  	id="type_coa_simrs"
+	  	name="Type COA Simrs"
+	  	sequence='2' 
+	  	action="bec_type_coa_simrs.action_type_coa_simrs"
+	  	parent="account.account_account_menu"
+	  	groups="account.group_account_manager"/>
+
+</odoo>

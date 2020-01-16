@@ -25,6 +25,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/inherit_account.xml',
+        'views/menu_item.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

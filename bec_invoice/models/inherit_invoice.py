@@ -8,6 +8,12 @@ class bec_invoice_AccountInvoice(models.Model):
     patient_id = fields.Many2one('res.partner', string='Patient', change_default=True,
         readonly=True, states={'draft': [('readonly', False)]}, domain="[('customer','=', True)]")
 
+
+    # @api.multi
+    # def assign_outstanding_credit(self, credit_aml_id):
+    # 	print (credit_aml_id,'credit_aml_id')
+    # 	exit()
+
 #     _name = 'bec_invoice.bec_invoice'
 
 #     name = fields.Char()

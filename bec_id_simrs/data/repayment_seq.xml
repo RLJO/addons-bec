@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Repayment sequences -->
+        <record id="sequence_repayment_customer_invoice" model="ir.sequence">
+            <field name="name">RePayments customer invoices sequence</field>
+            <field name="code">account.repayment.customer.invoice</field>
+            <field name="prefix">RPY.IN/%(range_year)s/</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="True" name="use_date_range"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">4</field>
+        </record>
+
+        <record id="sequence_repayment_customer_refund" model="ir.sequence">
+            <field name="name">RePayments customer credit notes sequence</field>
+            <field name="code">account.repayment.customer.refund</field>
+            <field name="prefix">RPY.OUT/%(range_year)s/</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="True" name="use_date_range"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">4</field>
+        </record>
+        
+    </data>
+</odoo>

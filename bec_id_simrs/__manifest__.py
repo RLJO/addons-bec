@@ -24,9 +24,12 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        # 'views/views.xml',
+        # 'views/templates.xml',
         'views/inherit_payment.xml',
+        'views/inherit_company.xml',
+        'views/inherit_partner.xml',
+        'data/repayment_seq.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

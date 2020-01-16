@@ -19,6 +19,7 @@
         <field name="inherit_id" ref="account.invoice_tree"/>
         <field name="arch" type="xml">
             <field name="partner_id" position="after">
+                <field name="id_simrs"/>
                 <field name="patient_id"/>
                 <field name="no_inv_simrs"/>
             </field>
