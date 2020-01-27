@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+     <record id='chart_of_accounts_with_parent.view_account_form_ext' model='ir.ui.view'>
+
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_form"/>
+        <field name="arch" type="xml">
+					<data>
+            <xpath expr="//field[@name='code']" position="before">
+              <field name="acc_level" widget="selection" />
+              <field name="acc_parent"/>
+            </xpath>
+          </data>
+        </field>
+		</record>
+  </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bec_tax_bec_tax,bec_tax.bec_tax,model_bec_tax_bec_tax,,1,0,0,0
