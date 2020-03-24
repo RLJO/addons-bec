@@ -212,6 +212,10 @@ class bec_AccountInvoice(models.Model):
 
     no_bapb_simrs = fields.Char(string='Nomor BAPB')
     no_faktur_simrs = fields.Char(string='Nomor Faktur')
+    no_po_simrs = fields.Char(string='Nomor PO')
+
+    nm_kasir = fields.Char(string='Nama Kasir')
+    shift_kasir = fields.Char(string='Shift Kasir')
 
     account_repayment_id = fields.Many2one('account.account', string='Account repayment',
         readonly=True, states={'draft': [('readonly', False)]},
