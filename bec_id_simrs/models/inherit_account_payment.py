@@ -206,7 +206,7 @@ class bec_AccountInvoice(models.Model):
     _inherit = "account.invoice"
 
     id_simrs = fields.Char(string='Id SIMRS')
-    kd_t_simrs = fields.Char(string='Kode T SIMRS')
+    kd_t_simrs = fields.Char(string='Kode T SIMRS')  
     no_inv_simrs = fields.Char(string='No Invoice SIMRS')
     no_tagihan_simrs = fields.Char(string='No Tagihan SIMRS')
 
@@ -214,13 +214,12 @@ class bec_AccountInvoice(models.Model):
     no_faktur_simrs = fields.Char(string='Nomor Faktur')
     no_po_simrs = fields.Char(string='Nomor PO')
 
-    nm_kasir = fields.Char(string='Nama Kasir')
-    shift_kasir = fields.Char(string='Shift Kasir')
-
     account_repayment_id = fields.Many2one('account.account', string='Account repayment',
         readonly=True, states={'draft': [('readonly', False)]},
         domain=[('deprecated', '=', False),('internal_type','=','receivable')], help="The partner account used for this invoice.")
 
+    nm_kasir = fields.Char(string='Nama Kasir')
+    shift_kasir = fields.Char(string='Shift Kasir')
     # @api.multi
     # def assign_outstanding_credit(self, credit_aml_id):
     #     self.ensure_one()

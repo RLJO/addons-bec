@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<menuitem id="menu_inagro_room" name="Booking Room"
+			sequence="1" groups="inagro_room.room_staff" />
+
+		<menuitem id="configuration_inagro_room" name="Configuration"
+			sequence="10" parent="menu_inagro_room" groups="inagro_room.room_manager"/>
+	</data>
+</odoo>
+    
+    
+    

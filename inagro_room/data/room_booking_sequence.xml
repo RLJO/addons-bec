@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<odoo>
+    <data noupdate="1">
+            <record id="seq_room_booking" model="ir.sequence">
+                <field name="name">Room Booking</field>
+                <field name="code">room.booking</field>
+                <field name="prefix">RB/%(year)s/</field>
+                <field name="padding">3</field>
+            </record>
+    </data>
+</odoo>

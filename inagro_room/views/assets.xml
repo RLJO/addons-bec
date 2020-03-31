@@ -1,0 +1,18 @@
+<odoo>
+
+<!--     <template id="assets_backend"
+        name="web_widget_datepicker_optionsassets"
+        inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript"
+                src="/inagro_room/static/src/js/datepicker.js"></script>
+        </xpath>
+    </template> -->
+    <template id="assets_backend" name="disable edit room booking" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/inagro_room/static/src/js/hide_action_button.js"></script>
+        </xpath>
+    </template>
+    
+
+</odoo>
